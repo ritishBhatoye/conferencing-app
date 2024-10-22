@@ -1,0 +1,14 @@
+In Next.js, `[[...slug]]` is a syntax used for **optional catch-all routes**. When you're using Clerk (an authentication service) and see `[[...sign-in]]`, it refers to a **dynamic route** that can optionally match multiple URL segments or even none at all.
+
+### Breaking Down `[[...sign-in]]`:
+- `[[...]]`: This makes the route **optional** and a **catch-all** route, meaning it can match `/sign-in`, `/sign-in/anything`, or simply `/sign-in`.
+- `sign-in`: This is the specific path segment. It indicates that this route is related to the **sign-in** process.
+
+### How It Works:
+- If the user visits `/sign-in`, the route will match and render the sign-in page.
+- If the user visits `/sign-in/some/path`, it will also match and catch the entire route (because of the `[[...]]` syntax).
+
+### Use Case in Clerk:
+- Clerk may use `[[...sign-in]]` to handle sign-in pages where additional parameters can be passed in the URL, but the route can also work if no parameters are present.
+
+This makes the route flexible and able to handle various scenarios related to the sign-in process.
