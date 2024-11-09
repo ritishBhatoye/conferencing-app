@@ -1,5 +1,6 @@
 import React,{ReactNode} from 'react'
 import Image from 'next/image';
+
 import {
     Dialog,
     DialogContent,
@@ -25,7 +26,7 @@ interface MeetingModalProps
      
 }
 
-const MeetingModal = ({isOpen,onClose,title,className,children,handleClick,buttonText,image,buttonIcon}:MeetingModalProps) => {
+const MeetingModal = ({isOpen,onClose,title,className,children,handleClick, buttonText,image,buttonIcon}:MeetingModalProps) => {
   return (
     <Dialog open={isOpen} onOpenChange={onClose} 
     

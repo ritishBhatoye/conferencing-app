@@ -1,3 +1,5 @@
+'use client';
+
 //providers are the component that are used to wrap the our ENTIRE APPLICATION and fuse it to use the additional functionality 
 import { tokenProvider } from '@/actions/stream.actions';
 import Loader from '@/components/Loader';
