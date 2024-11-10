@@ -7,6 +7,7 @@ import { useToast } from "@/hooks/use-toast";
 //in order to TARGET specific Toast use the useToast HOOK
 import { Toaster } from "@/components/ui/toaster";
 import '@stream-io/video-react-sdk/dist/css/style.css';
+import 'react-datepicker/dist/react-datepicker';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
